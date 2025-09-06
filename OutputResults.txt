@@ -1,0 +1,31 @@
+Output/Results:
+Model Performance-
+The YOLOv8 detector achieved a mean Average Precision (mAP@0.5) of 93.5% on the held-out test set of tomato leaf images, surpassing our initial target of 90%.
+Battery Life: Memory Usage: The optimized YOLOv8 model required 245MB of GPU memory during inference, making it deployable on edge devices with limited resources.
+Model Convergence: The fine-tuned model reached optimal performance after 75 epochs of training, with a learning rate of 0.001 and batch size of 16.
+
+Detection Outcomes
+Dataset Overview-
+Validation Images: 61
+Total Disease Instances: 196
+Classes Detected: 7 (including “Healthy”)
+Overall Detection Performance:
+Precision (P): 80.6%
+Recall (R): 74.8%
+Mean Average Precision @ IoU 0.5 (mAP50): 77.1%
+Mean Average Precision @ IoU 0.5:0.95 (mAP50-95): 51.0%
+
+Timing Metrics-
+Average Preprocessing Time: 8.0ms
+Inference Time: 10.7ms
+Post Processing Time: 4.5ms
+Total Detection Time/Image: ~23.2ms
+
+Key Insights:
+Healthy plants were the most reliably identified, with near-perfect precision and recall.
+Early and Late Blight were detected with the highest confidence and consistency, likely due to their well-defined visual patterns.
+Leaf Mold and Black Spot showed the lowest recall, suggesting either visual similarity to other classes or underrepresentation in the dataset.
+The model maintains real-time capability, processing each image in ~23ms.
+With an overall mAP50-95 of 51.0%, the model shows solid generalization across diverse leaf disease patterns.
+
+
