@@ -19,8 +19,13 @@ Support for eco-friendly farming practices.
 - Arduino IDE
 - ESP32-CAM
 - 4WD robotic platform
-
 # AgroVision Pipeline Flowchart: 
+![agro](https://github.com/user-attachments/assets/c01ba903-12bc-4373-99fe-d2d8e4b2ee22)
 
-![Agrovision Flowchart](assets/agro.jpg)
+- Start Monitoring: The system initializes the robot and camera, starting the monitoring process.
+- Capture Image: As the robot moves, the camera captures images of plants.
+- Send Image to Processing Unit: The captured image is sent to the laptop or cloud via Wi-Fi.
+- Analyze Image with YOLOv8: The AI model (YOLOv8) processes the image and detects any signs of disease.
+- End Monitoring: Once the area is covered, the robot stops.
+
 
